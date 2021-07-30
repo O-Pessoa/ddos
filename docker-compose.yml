@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    command: npm start
+    volumes:
+      - .:/usr/app
+    environment:
+      - URL=https://exemple.com
+      - TIME=100
